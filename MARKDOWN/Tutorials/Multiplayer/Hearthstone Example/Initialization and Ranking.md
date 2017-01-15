@@ -128,7 +128,7 @@ if(outcome === "victory"){
     Spark.getPlayer().setScriptData("stars", currentStars);
 
     //Check for rank range
-    if(currentRank >= 25 && currentRank <= 21 ){
+    if(currentRank <= 25 && currentRank >= 21 ){
 
         //Check for number of stars and if they qualify a levelup
         if (currentStars >= 2){
@@ -139,7 +139,7 @@ if(outcome === "victory"){
         }
 
     }
-    else if(currentRank >= 20 && currentRank <= 16 ){
+    else if(currentRank <= 20 && currentRank >= 16 ){
         //Check for number of stars and if they qualify a levelup
         if (currentStars >= 3){
             //If number is met, level up by descending down towards rank 1
@@ -148,7 +148,7 @@ if(outcome === "victory"){
             Spark.getPlayer().setScriptData("stars", 0);
         }
     }
-    else if(currentRank >= 15 && currentRank <= 11 ){
+    else if(currentRank <= 15 && currentRank >= 11 ){
         //Check for number of stars and if they qualify a levelup
         if (currentStars >= 4){
             //If number is met, level up by descending down towards rank 1
